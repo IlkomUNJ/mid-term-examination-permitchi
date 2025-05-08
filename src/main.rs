@@ -5,6 +5,7 @@ use crate::structure::bst::BstNode;
 use crate::structure::tree::Node;
 use crate::structure::tree::NodeLink;
 use crate::structure::bst::BstNodeLink;
+use crate::structure::btree::btree::BTree;
 use crate::tool::generate_dotfile;
 use crate::tool::generate_dotfile_bst;
 
@@ -12,6 +13,7 @@ fn main() {
     //turn on to test the old code
     // test_binary_tree();
     test_binary_search_tree();
+    BTree::analyze_rel();
 }
 
 fn test_binary_search_tree(){
