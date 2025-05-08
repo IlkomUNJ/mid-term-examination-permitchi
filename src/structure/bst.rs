@@ -354,21 +354,21 @@ impl BstNode {
     }
 
     // /** Problem A **/
-    // fn add_node(&self, target_node: &BstNodeLink, value: i32)→ bool {
-    //     let mut input_node = String::new();
+    fn add_node(&self, target_node: &BstNodeLink, value: i32)→ bool {
+        let mut input_node = String::new();
 
-    //     // check if node is smaller than target_node
-    //     if input_node < target_node {
-    //         rootlink.borrow_mut().add_left_child(&rootlink, 3);
-    //         return true;
-    //     } else if left_child = true {
-    //         rootlink.borrow_mut().add_right_child(&rootlink, 7);
-    //         return true;
-    //     }else {
-    //         println!("No space to add child node")
-    //         return false;
-    //     }
-    // }
+        // check if node is smaller than target_node
+        if input_node < target_node {
+            rootlink.borrow_mut().add_left_child(&rootlink, 3);
+            return true;
+        } else if left_child = true {
+            rootlink.borrow_mut().add_right_child(&rootlink, 7);
+            return true;
+        }else {
+            println!("No space to add child node")
+            return false;
+        }
+    }
 
     // fn tree_predecessor(node &BstNodeLink) → Option<BstNodeLink> {
 
