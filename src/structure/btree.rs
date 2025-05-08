@@ -11,7 +11,7 @@ pub mod btree {
     #[derive(Debug, Clone)]
     pub struct BTree {
         pub word_count: i32,
-        pub static words: Vec<Vec<i32>> = vec![
+        pub words: Vec<Vec<i32>> = vec![
             vec![1, 2, 3, 4],
             vec![1, 2, 3, 5],
             vec![1, 2, 2, 4],
@@ -22,9 +22,11 @@ pub mod btree {
 
     impl BTree {
         pub fn analyze_rel() {
-            for i in &Vec<Vec<i32>> {
+            for i in &words {
                 for j in &Vec<i32> {
-                    [i][j] 
+                    if [i][j] != [i][j+1] {
+                        let relation = [[i][j],[i][j+1]];
+                    }
                 }
             }
         }
